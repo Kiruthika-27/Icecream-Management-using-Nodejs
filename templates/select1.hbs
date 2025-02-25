@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login1.css">
+</head>
+</head>
+<body>
+    <h1>Select Icecream Facilities</h1>
+    <form action="select" method="post"> <!-- Replace '#' with your form submission URL -->
+        <fieldset>
+            <legend>Facilities:</legend>
+            <div class="facility">
+                <input type="checkbox" id="facility1" name="facilities[]" value="Icecream type">
+                <label for="facility1">Icecream type</label>
+            </div>
+            <div class="facility">
+                <input type="checkbox" id="facility2" name="facilities[]" value="offers">
+                <label for="facility2">Offers</label>
+            </div>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

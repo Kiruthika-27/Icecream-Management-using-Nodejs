@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+<style>
+body {
+    font-family: Arial, Helvetica, sans-serif; 
+
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+h1 {
+    color: peru;
+    margin-top: 10vh;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+input {
+    font-size: 1.2rem;
+    width: 300px;
+    padding: 10px 12px;
+    margin: 10px 0;
+    margin-left: 100px;
+    border: none;
+    border-radius: 20px;
+    background-color:navajowhite;;
+    box-shadow: 0 4px 6px pink(0, 0, 0, 0.1);
+  }
+  
+.card {
+  box-shadow: 0 4px 8px 0 pink(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, pink 0%, skyblue 100%);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 5px;
+  text-align: center;
+  background-color: #474e5d;
+  color: pink;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: orange;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: paleturquoise;
+  background-color: palevioletred;;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+}
+
+#ice{
+  margin-left: 250px;
+   width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+  
+
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+  <form action="/home" method="post">
+
+<div class="about-section">
+  <h1>SCOOOPSYNC</h1>
+  <h2>About Us Page</h2>
+  <p>Crave-Worthy Scoops: Satisfaction in Every Bite </p>
+  <p>Sweet Delights, Endless Smile:)</p>
+</div>
+
+<h2 style="text-align:center">Our Flavors</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+
+      <div class="container">
+        <h2> Chocolate</h2>
+        <p>Chocolate ice cream is generally made by blending cocoa powder, and the eggs, cream, vanilla, and sugar used to make vanilla ice cream.</p>
+        <p>cost:$45<p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+
+      <div class="container">
+        <h2>Vanilla</h2>
+       
+        <p>A smoother consistency and richer taste characterize the French vanilla flavor, whereas regular vanilla ice cream is plainer.</p>
+        <p>cost:$20</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>Teaberry</h2>
+        <p>Teaberry ice cream tastes neither like tea nor berries. The teaberry has a minty, spicy flavor that some remember as an old-timey favorite.</p>
+        <p>cost:$50</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+
+      <div class="container">
+        <h2>Butter Pecan</h2>
+       
+        <p>Simply put, butter pecan is a flavor that merges the nutty notes of pecan with rich butter and a hint of sweet vanilla extract.</p>
+        <p>cost:$10</p>
+       
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+
+      <div class="container">
+        <h2>Rocky Road</h2>
+        <p>Rocky Road is a chocolate-based ice cream flavor mixed with chopped almonds and marshmallow pieces ts name was a play on words referring to the yummy chocolate.</p>
+        <p>cost:$100</p>
+       
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="column">
+    <div class="card">
+
+      <div class="container">
+        <h2>Strawberry</h2>
+       
+        <p>Strawberry ice cream is made by blending in fresh strawberries with the eggs,cream,vanilla and sugar used to make ice cream. this ice cream is colored pink or light red.</p>
+        <p>cost:$30</p>
+
+      </div>
+    </div>
+  </div>
+</div>
+<h1> order</h1>
+<section id="ice">
+<label for="icecream_name">Icecream name:</label>
+  <input type="text" id="icecream_name" name="icecream_name" required><br>
+
+<label for="icecream_cost">Icecream cost:</label>
+  <input type="number" id="icecream_cost" name="icecream_cost" required><br>
+  
+  <label for="icecream_type">Icecream type:</label>
+  <input type="text" id="icecream_type" name="icecream_type" required><br>
+
+ <label for="icecream_quantity">Icecream quantity:</label>
+  <input type="text" id="icecream_quantity" name="icecream_quantity" required><br>
+          <p><button class="button">Order</button></p>
+ </section>       
+</body>
+</html>
+<body>
+
+  
+ 
+</form>
+  
+   
+</body>
+</html>
